@@ -2,5 +2,5 @@
 # Build stage
 #
 FROM maven:3.6.0-jdk-11-slim AS build
-COPY pom.xml /maven-samples/single-module/src/
-RUN mvn -f maven-samples/single-module/src/pom.xml clean install
+COPY pom.xml /maven-samples/single-module/
+RUN mvn -f maven-samples/single-module/pom.xml clean install
